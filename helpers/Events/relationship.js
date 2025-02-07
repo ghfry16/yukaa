@@ -85,17 +85,17 @@ export default async function on({ cht, Exp, store, ev, is }) {
             text: txt,
             contextInfo: { 
                 externalAdReply: {
-                    title: cht.pushName,
-                    body: "Artificial Intelligence, The beginning of the robot era",
+                    title: "Miku bot",
+                    body: "",
                     thumbnailUrl: url,
-                    sourceUrl: "https://github.com/Rifza123",
+                    sourceUrl: "https://instagram.com/saidd_bae",
                     mediaUrl: "http://ẉa.me/6283110928302/"+Math.floor(Math.random() * 100000000000000000),
                     renderLargerThumbnail: true,
                     showAdAttribution: true,
                     mediaType: 1,
                 },
                 forwardingScore: 19,
-                isForwarded: true,
+                isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: "120363301254798220@newsletter",
                 }
@@ -150,8 +150,8 @@ export default async function on({ cht, Exp, store, ev, is }) {
             text: txt,
             contextInfo: { 
                 externalAdReply: {
-                    title: cht.pushName,
-                    body: "Artificial Intelligence, The beginning of the robot era",
+                    title: "Miku bot",
+                    body: "",
                     thumbnailUrl: user.charging ? "https://telegra.ph/file/bdbdba007e7c85e6f42f5.jpg":"https://telegra.ph/file/69da6d06dcdfd82057352.jpg",
                     sourceUrl: "https://github.com/Rifza123",
                     mediaUrl: `http://ẉa.me/6283110928302/${user.charging ? "2733":"2734"}`,
