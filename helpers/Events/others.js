@@ -16,7 +16,7 @@ export default async function on({ cht, Exp, store, ev, is }) {
         let hit = func.getTotalCmd()
         let topcmd =  func.topCmd(2)
         let totalCmd = Object.keys(Data.events).length
-        let head = `*[ INFO ]*\n- *${hit.total}* Hit Emitter\n- *${hit.ai_response}* Ai response\n\n*[ Relationship ]*\n- Status: *${cht.memories.role}*\n- Mood: ${cht.memories.energy}${cht.memories.energy < 10 ? "😪":"⚡"}\n\n ▪︎ 『 \`Events On\` 』\n- Total: ${totalCmd}\n\n ▪︎ 『 \`Top Cmd \`』\n> ${"`"}${topcmd.join("`\n> `")}${"`"}\n\n`
+        let head = `Hallo👋, Saya Adalah Sistem Ototmatis (Bot WhatsApp) Yang Dapat Membantu Mencari dan Mendapatkan Informasi Hanya Melalui WhatsApp\n\n`
         let text = head + func.menuFormatter(Data.events, { ...cfg.menu, ...cht })
         let menu = {}
         if(cfg?.menu_type == "text"){
@@ -53,17 +53,17 @@ export default async function on({ cht, Exp, store, ev, is }) {
             text,
             contextInfo: { 
                 externalAdReply: {
-                    title: cht.pushName,
-                    body: "Artificial Intelligence, The beginning of the robot era",
+                    title: "Miku bot",
+                    body: "",
                     thumbnail: fs.readFileSync(fol[3] + "bell.jpg"),
-                    sourceUrl: "https://github.com/Rifza123",
+                    sourceUrl: "https://instagram.com/saidd_bae",
                     mediaUrl: `http://ẉa.me/6283110928302/${Math.floor(Math.random() * 100000000000000000)}`,
                     renderLargerThumbnail: true,
                     showAdAttribution: true,
                     mediaType: 1,
                 },
                 forwardingScore: 19,
-                isForwarded: true,
+                isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: "120363301254798220@newsletter",
                     newslettedName: "Termai",
